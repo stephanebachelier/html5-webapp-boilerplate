@@ -12,6 +12,15 @@ KISS:
 
 ## How to install
 
+You need to have `bower` and `grunt-cli` installed prior to use this boilerplate.
+They should be installed globally using `-g` flag.
+
+```js
+$ npm install -g bower
+$ npm install -g grunt-cli
+```
+
+Then you just need to run these commands:
 ```js
 $ npm install
 $ bower install # if you want bourbon and neat
@@ -19,16 +28,25 @@ $ bower install # if you want bourbon and neat
 
 ## How to use
 
+### Development
+
 ```js
 $ grunt serve
-$ grunt serve:dist
+```
+
+### Production (broken for now)
+
+```js
 $ grunt build
+$ grunt serve:dist
 ```
 
 ## How to install a frontend library or framework ?
 
+To install jquery you should write:
+
 ```js
-$ bower install [your-library]
+$ bower install --save jquery
 $ grunt wiredep
 ```
 
