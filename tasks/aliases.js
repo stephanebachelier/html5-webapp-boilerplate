@@ -2,14 +2,14 @@ module.exports = {
   build: [
     'clean:dist',
     'wiredep',
-    'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
+    'useminPrepare',
+    'copy:dist',
     'concat',
     'cssmin',
     'uglify',
-    'copy:dist',
-    'rev',
+    'filerev',
     'usemin',
     'htmlmin'
   ],

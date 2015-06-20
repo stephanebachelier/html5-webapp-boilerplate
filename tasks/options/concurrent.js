@@ -4,7 +4,7 @@ module.exports = {
     'copy:styles'
   ],
   dist: [
-    'sass',
+    'sass:dist',
     'copy:styles',
     'imagemin',
     'svgmin'
