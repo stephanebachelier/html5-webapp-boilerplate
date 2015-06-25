@@ -25,7 +25,10 @@ module.exports = {
   },
   sass: {
     files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
-    tasks: ['sass:server', 'autoprefixer']
+    tasks: ['sass:server', 'autoprefixer'],
+    options: {
+      livereload: true
+    }
   },
   styles: {
     files: ['<%= config.app %>/styles/{,*/}*.css'],
